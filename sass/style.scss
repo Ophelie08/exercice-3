@@ -1,0 +1,125 @@
+@import 'reset';
+@import "variable.scss";
+
+.ap-container-large{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .ap-container-small {
+    height: 169px;
+    width: 294px;
+    position: relative;
+
+        &__square--left{
+            left: 0;
+            background-color: var(--color-primary-500);
+            height: 32px;
+            width: 32px;
+            position: absolute;
+        }
+
+        &__square--middle{
+            right: 50%;
+            background-color: var(--color-primary-500);
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            transform: translateX(50%);
+        }
+        &__square--right{
+            right: 0;
+            background-color: var(--color-primary-500);
+            height: 32px;
+            width: 32px;
+            position: absolute;
+        }
+
+        &__square--left-middle{
+            left: 0;
+            top: 50%;
+            background-color: var(--color-primary-500);
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+
+        &__square--left-bottom{
+            left: 0;
+            bottom: 0;
+            background-color: var(--color-primary-500);
+            height: 32px;
+            width: 32px;
+            position: absolute;
+        }
+
+        &__square--right-bottom{
+            right: 0;
+            bottom: 0;
+            background-color: var(--color-primary-500);
+            height: 32px;
+            width: 32px;
+            position: absolute;
+        }
+
+        &__square--right-middle{
+            right: 0;
+            top: 50%;
+            background-color: var(--color-primary-500);
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+
+        &__square--middle-middle{
+            right: 50%;
+            top: 50%;
+            background-color: var(--color-primary-500);
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            transform: translate(50%,-50%);
+
+        }
+
+
+        &__square--middle-bottom{
+            right: 50%;
+            bottom: 0;
+            background-color: var(--color-primary-500);
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            transform: translateX(50%);
+
+        }
+    }
+ 
+
+/*
+    &--top {
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    &--middle {
+        display: flex;
+        justify-content: space-between;
+        height: 75%;
+        align-items: center;
+
+    }
+
+    &--bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+ */
